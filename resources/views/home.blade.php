@@ -13,9 +13,9 @@
                 <div class="pr-5"><strong>23к</strong> пратиоца</div>
                 <div class="pr-5"><strong>212</strong> пратим</div>
             </div>
-            <div class="pt-3"><strong>Криминалистичко-полицијски универзитет</strong></div>
-            <div>Криминалистичко-полицијски универзитет настао је интеграцијом Више школе унутрашњих послова и Полицијске академије и њихов је правни следбеник.</div>
-            <div><a href="http://www.kpu.edu.rs/cms/">www.kpu.edu.rs</a></div>
+            <div class="pt-3"><strong>{{ $user->profile->title }}</strong></div>
+            <div>{{ $user->profile->description }}</div>
+            <div><a href="http://{{ $user->profile->url }}">{{ $user->profile->url }}</a></div>
         </div>
         <div class="row pt-5">
             <div class="col-4"><img src="https://instagram.fbeg4-1.fna.fbcdn.net/vp/02c7048c842d9891ffbc020b7e52f87c/5E1AB835/t51.2885-15/e35/41652716_166953537519157_5059919492574613736_n.jpg?_nc_ht=instagram.fbeg4-1.fna.fbcdn.net&_nc_cat=101" alt="Post" class="w-100"></div>
