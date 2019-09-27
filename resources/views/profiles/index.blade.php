@@ -7,7 +7,10 @@
             <img src="https://instagram.fbeg4-1.fna.fbcdn.net/vp/fea40a245ed1b61f46254a009c37f3cd/5E20DBBC/t51.2885-19/s150x150/11899454_403213659879109_419394403_a.jpg?_nc_ht=instagram.fbeg4-1.fna.fbcdn.net" class="rounded-circle" alt="Avatar">
         </div>
         <div class="col-lg-9 pt-lg-5">
-            <div><h1>{{ $user->username }}</h1></div>
+            <div class="d-flex justify-content-between align-items-baseline">
+                <h1>{{ $user->username }}</h1>
+                <a href="#">Додај нову објаву</a>
+            </div>
             <div class="d-flex">
                 <div class="pr-5"><strong>153</strong> објава</div>
                 <div class="pr-5"><strong>23к</strong> пратиоца</div>
