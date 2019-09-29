@@ -26,8 +26,8 @@
 
             <div class="d-flex">
                 <div class="pr-5"><strong>{{ $user->posts->count() }}</strong> објавe</div>
-                <div class="pr-5"><strong>23к</strong> пратиоца</div>
-                <div class="pr-5"><strong>212</strong> пратим</div>
+                <div class="pr-5"><strong>{{ $user->profile->followers->count() }}</strong> пратилаца</div>
+                <div class="pr-5"><strong>{{ $user->following->count() }}</strong> прати</div>
             </div>
 
             <div class="pt-3"><strong>{{ $user->profile->title }}</strong></div>
