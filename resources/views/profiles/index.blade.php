@@ -9,7 +9,12 @@
 
         <div class="col-lg-9 pt-lg-5">
             <div class="d-flex justify-content-between align-items-baseline">
-                <h1>{{ $user->username }}</h1>
+                <div class="d-flex align-items-center pb-3">
+                    <div class="h4">{{ $user->username }}</div>
+
+                    <follow-button user-id="{{ $user->id }}"></follow-button>
+                </div>
+
                 @can('update', $user->profile)
                     <a href="/p/create">Додај нову објаву</a>
                 @endcan
